@@ -15,7 +15,7 @@ def main():
     for c in MVTec.CATEGORY:
         print("category {}".format(c))
         dataset = MVTec(c, cfg, device=device)
-        trainer = Trainer(c, nb_epochs=cfg.nb_epoch, backbone=cfg.backbone, lr=cfg.learning_rate, batch_size=cfg.batch_size, result_path=cfg.result_path)
+        trainer = Trainer(c, cfg)
         trainer.to_device(device)
         trainer.run(dataset)
         trainer.save_weights("{}/{}_{}.pth".format(cfg.weight_path, c, cfg.backbone))
