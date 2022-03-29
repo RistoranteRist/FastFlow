@@ -1,4 +1,4 @@
 # Implementation of FastFlow
 
 ## Training models
-run `python main.py`
+fill in pathes in `config.py` and run `python main.py`
