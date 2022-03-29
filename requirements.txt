@@ -1,0 +1,9 @@
+matplotlib
+tqdm
+numpy
+sklearn
+torch
+torchvision
+av
+timm
+git+https://github.com/VLL-HD/FrEIA.git
