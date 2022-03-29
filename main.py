@@ -1,7 +1,6 @@
 import torch
 
 from train import Trainer
-from test import Tester
 from dataset import MVTec
 
 import config as cfg

@@ -17,7 +17,7 @@ class MVTec(Dataset):
     }
 
     def __init__(self, category, config, device=None, preload=True):
-        self.cfg = cfg # MVTec dataset folder path
+        self.cfg = config # MVTec dataset folder path
         assert self.cfg.mvtec_path is not None, "need to fill in mvtec_path in config.py"
         self.device = device
         self.category = category
