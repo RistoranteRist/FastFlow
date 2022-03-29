@@ -2,7 +2,7 @@
 An unofficial PyTorch implementation of [FastFlow](https://arxiv.org/abs/2111.07677)
 
 
-[FrEIA](https://github.com/VLL-HD/FrEIA) module modified to fit the Jacobi determinant shape is used
+[FrEIA](https://github.com/VLL-HD/FrEIA) module modified to change the Jacobi determinant shape is used
 
 ## Training models
 fill in pathes in `config.py` and run `python main.py`
