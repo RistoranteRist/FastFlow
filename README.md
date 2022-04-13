@@ -1,11 +1,26 @@
 # FastFlow
-An unofficial PyTorch implementation of [FastFlow](https://arxiv.org/abs/2111.07677)
+An unofficial PyTorch implementation of [FastFlow: Unsupervised Anomaly Detection and Localization via 2D Normalizing Flows](https://arxiv.org/abs/2111.07677) (Jiawei Yu et al.).  
 
 
-[FrEIA](https://github.com/VLL-HD/FrEIA) module modified to change the Jacobi determinant shape is used
+We modified some of [FrEIA](https://github.com/VLL-HD/FrEIA) module to output Jacobian determinant which has same shape of the input data.
+
+## Installation
+
+1. Clone this repository.
+2. Download MVTecAD dataset from https://www.mvtec.com/company/research/datasets/mvtec-ad and place it in the directory of your choice.  
+3. Install python packages on your system with `pip install -r requirements.txt`.  
 
 ## Training models
-fill in pathes in `config.py` and run `python main.py`
+
+1. Replace paths (and other configs if needed) in `config.py` to fit your environment.  
+
+```
+mvtec_path = "/path/to/MVtecAD" ## path you placed the dataset.
+weight_path = "./weights" ## directory to save fastflow model weights.
+result_path = "./results" ## directory to save logs.
+```
+
+2. Run `python main.py`.  
 
 ## metrics
 
