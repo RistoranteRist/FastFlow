@@ -22,6 +22,8 @@ result_path = "./results" ## directory to save logs.
 
 2. Run `python main.py`.  
 
+Evaluation on test dataset runs every `validate_per_epoch`(in config.py) epochs.
+
 ## metrics
 
 Image level AUROC
