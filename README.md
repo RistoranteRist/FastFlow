@@ -1,5 +1,5 @@
 # FastFlow
-An unofficial PyTorch implementation of [FastFlow: Unsupervised Anomaly Detection and Localization via 2D Normalizing Flows](https://arxiv.org/abs/2111.07677) (Jiawei Yu et al.).  
+An unofficial PyTorch implementation of [*FastFlow: Unsupervised Anomaly Detection and Localization via 2D Normalizing Flows*](https://arxiv.org/abs/2111.07677) (Jiawei Yu et al.).  
 
 
 We modified some of [FrEIA](https://github.com/VLL-HD/FrEIA) module to output Jacobian determinant which has same shape of the input data, [here](https://github.com/RistoranteRist/FastFlow/blob/main/model.py#L42-L336).  
