@@ -2,13 +2,23 @@
 An unofficial PyTorch implementation of [FastFlow: Unsupervised Anomaly Detection and Localization via 2D Normalizing Flows](https://arxiv.org/abs/2111.07677) (Jiawei Yu et al.).  
 
 
-We modified some of [FrEIA](https://github.com/VLL-HD/FrEIA) module to output Jacobian determinant which has same shape of the input data, [here](https://github.com/RistoranteRist/FastFlow/blob/main/model.py#L42-L336).
+We modified some of [FrEIA](https://github.com/VLL-HD/FrEIA) module to output Jacobian determinant which has same shape of the input data, [here](https://github.com/RistoranteRist/FastFlow/blob/main/model.py#L42-L336).  
 
 ## Installation
 
-1. Clone this repository.
+1. Clone this repository.  
 2. Download MVTecAD dataset from https://www.mvtec.com/company/research/datasets/mvtec-ad and place it in the directory of your choice.  
 3. Install python packages on your system with `pip install -r requirements.txt`.  
+
+Versions of our system is listed below.
+
+```
+OS      : Ubuntu 18.04.5
+CUDA    : 11.3
+cudnn   : 8.2.0.53-1
+python  : 3.7.11
+FrEIA   : 0.2
+```
 
 ## Training models
 
@@ -22,11 +32,11 @@ result_path = "./results" ## directory to save logs.
 
 2. Run `python main.py`.  
 
-Evaluation on test dataset runs every `validate_per_epoch`(in config.py) epochs.
+Evaluation on test dataset runs every `validate_per_epoch`(in config.py) epochs.  
 
-## metrics
+## Metrics
 
-Image level AUROC
+Image level AUROC  
 
 | category |  bottle  |  cable  |  capsule  |  carpet  |  grid  |  hazelnut  |  leather  |  metul_nut  |  pill  |  screw  |  tile  |  toothbrush  |  transistor  |  wood  |  zipper  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |

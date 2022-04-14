@@ -1,9 +1,9 @@
-matplotlib
-tqdm
-numpy
-sklearn
-torch
-torchvision
-av
-timm
+matplotlib==3.5.1
+tqdm==4.64.0
+numpy==1.21.6
+scikit-learn==1.0.2
+torch==1.11.0
+torchvision==0.12.0
+av==9.1.1
+timm==0.5.4
 git+https://github.com/VLL-HD/FrEIA.git
