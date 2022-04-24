@@ -410,7 +410,7 @@ def build_fast_flow(clamp, clamp_activation, encoded_shape=(768, 28, 28)):
                 nodes[-1],
                 FastFlowBlock,
                 {
-                    'subnet_constructor': subnet_conv_3x3,
+                    'subnet_constructor': subnet_conv_1x1,
                     'clamp': clamp,
                     'clamp_activation': clamp_activation
                 },
